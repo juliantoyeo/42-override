@@ -91,7 +91,7 @@ So we need to write into `0x80497e0` and `0x80497e0 + 2` or `0x80497e2`
 Now we need to split 0xffffd832 into 2, with little endian way
 
 ```console
-d832 = 55346 - 8(2 address written before) = 55338
+d832 = 55346 - 8(the total count of the 1st address) = 55338
 ffff = 65535 - 55346 = 10189
 ```
 
